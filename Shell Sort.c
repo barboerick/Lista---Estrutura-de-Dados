@@ -22,17 +22,11 @@ void main() {
 }
 
 void shell(int *lista, int tamanho){
-    /*i = laço principal, j = laço interno, aux = compara os itens*/
+
     int i,j, aux;
-    /*formula se torna diferente por conta da 
-    linguagem C não ter como fazer o calculo de
-    log3, assim usando o Logaritmo neperiano. Calculo de varredura*/
     float k = log(tamanho+1)/log(3);
-    /*arredondando para baixo o valor recebido por K, 
-assim convertendo em numero inteiro*/
     k = floor(k+0.5);
-    /*uma função que recebe dois argumentos 
-sendo o primeiro a base e o segundo a potencia*/
+
     int h = (pow(3,(int)k)-1)/2;
     while(h>0){
         for(i = h;i<tamanho;i++){
